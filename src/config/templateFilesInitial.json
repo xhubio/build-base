@@ -8,6 +8,7 @@
   "tsconfig.json",
   "license",
   "typedoc.json",
+  "renovate.json",
   ".prettierignore",
   ".prettierrc.json",
   {
@@ -29,5 +30,9 @@
   {
     "dest": ".github/workflows/release.yml",
     "src": "_github/workflows/release.yml"
+  },
+  {
+    "dest": ".github/workflows/test.yml",
+    "src": "_github/workflows/test.yml"
   }
 ]
