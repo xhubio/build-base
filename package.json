@@ -5,6 +5,9 @@
     "type": "git",
     "url": "https://github.com/xhubio/build-base"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "bin": {
     "xhubio-scripts-lib": "./bin/xhubio-scripts-lib.js"
