@@ -1,0 +1,32 @@
+{
+  "version": "0.0.0-semantic-version",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xxx.git"
+  },
+  "description": "My great XXX Lib",
+  "main": "dist/src/index.js",
+  "license": "MIT",
+  "keywords": [
+    "build",
+    "typescript"
+  ],
+  "files": [
+    "dist/src/**/*"
+  ],
+  "scripts": {
+    "build": "npm run format && npm run lint && rimraf dist && tsc && depcheck",
+    "build:debug": "npm run format && npm run lint && rimraf dist && tsc --sourceMap true",
+    "debug": "npm run build:debug && node -r ts-node/register --inspect-brk ./node_modules/.bin/jest -i --config=./jest.config.js",
+    "doc": "npm run docPdf && npm run docDocbook && npm run doc2md && npm run docApi && npx xhubio-scripts-lib replaceImageLinks",
+    "doc2md": "pandoc -f docbook -t markdown_strict docTmp/index.xml -o README.md",
+    "docApi": "npx typedoc --plugin typedoc-plugin-markdown",
+    "docDocbook": "asciidoctor -a ./node_modules/.bin/mmdc -r asciidoctor-diagram -b docbook5 doc/index.adoc -o docTmp/index.xml",
+    "docPdf": "asciidoctor-pdf -a ./node_modules/.bin/mmdc -r asciidoctor-diagram doc/index.adoc -o docTmp/index.pdf",
+    "format": "prettier --write \"{src,tests}/**/*.{js,ts,yml}\"",
+    "lint": "eslint \"{src,tests}/**/*.{js,ts}\"",
+    "xhubioUpdate": "npx xhubio-scripts-lib xhubioUpdate",
+    "test": "npm run build && jest -c jest.config.js",
+    "test:only": "jest -c jest.config.js"
+  }
+}

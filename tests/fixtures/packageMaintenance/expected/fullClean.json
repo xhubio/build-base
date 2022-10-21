@@ -1,0 +1,37 @@
+{
+  "name": "@rikern/gumbo",
+  "bin": {
+    "on-scripts": "./bin/on-server-scripts.js"
+  },
+  "dependencies": {
+    "@babel/runtime": "0.0.0",
+    "core-js": "0.0.0"
+  },
+  "description": "",
+  "devDependencies": {
+    "@rikern/e2e-tools-service": "0.0.0"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "gumbo": [
+    "val 1",
+    "val 2",
+    "val 3",
+    "val 4"
+  ],
+  "other": {
+    "b": "3",
+    "c": "4"
+  },
+  "license": "Deutsche Bahn",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "yarn clean && yarn src_format && yarn src_lint && babel src -d lib",
+    "clean": "rimraf lib && rimraf docMd && rimraf coverage",
+    "debug": "yarn build && node --inspect-brk ./node_modules/.bin/jest -i --config=./jest.config.json",
+    "doc": "yarn docApi && yarn docAsciidoc",
+    "sonar": "npx sonar-scanner -Dsonar.host.url=https://sonar.reisendeninfo.aws.db.de/"
+  },
+  "version": "0.0.0-semantic-version"
+}

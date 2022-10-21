@@ -1,0 +1,10 @@
+{
+  "devDependencies": [
+    "@asciidoctor/core",
+    "@asciidoctor/docbook-converter",
+    "@babel/cli"
+  ],
+  "other": [
+    "a"
+  ]
+}

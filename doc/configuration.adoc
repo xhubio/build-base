@@ -1,0 +1,57 @@
+= How to use this module
+
+The aim of this module ist to provide an easy way to setup new repositories and to maintain the exiting ones.
+
+== Local Set Up
+To be able to download packages from the organisation level you need to configure a https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token[GitHub Personal Access Token] with at least `ReadPackages` permission.
+
+Later create (or update) a `./npmrc` file in your `$HOME` folder with the following content:
+....
+@onrunning:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=<YOUR_PERSONAL_GIT_HUB_TOKEN>
+....
+
+== Package.json
+To maintain or configure the 'package.json' file the following files needs to be maintained.
+
+* `src/config/packageInitial.json` +
+  All the values entered here will be used to create a new 'package.json' file.
+
+* `src/config/packageUpdate.json`  +
+  All the values entered here will be updated or added with the command.
+
+* `src/config/packageDelete.json` +
+  All the values entered here will be delete with the command.
+
+== Files
+To maintain the configuration files the following files need to be maintained
+
+* `src/config/templateFilesInitial.json` +
+  The array contains a list of files to be copied from the templates folder
+  into the new repository.
+
+  Some of these files have a meaning even in the template folder of this repository so they must be renamed.
+  For this teh array could also have an object where the source name could be different from the target name.
+
+  .example for file names
+  [source.json]
+  ----
+  [
+    ".releaserc.json",         <1>
+    {                          <2>
+      "dest": ".gitignore",
+      "src": "gitignore"
+    },
+  ]
+  ----
+  <1> Just a file name.
+  <2> The name of the source file is different to the target file.
+
+
+* `src/config/templateFilesUpdate.json` +
+  The list of files to be updated or added. The 'onUpdate' will overwrite files only if called with the 'force' option.
+
+
+* `src/config/templateFilesDelete.json` +
+  The array contains a list of filenames relative to the root project which should be deleted
+  from the maintained repository.

@@ -1,0 +1,27 @@
+= Documentation generation
+
+To generate documentation execute
+
+----
+npm run doc
+----
+
+the following tools needs to be installed:
+
+* asciidoctor
+* asciidoctor-pdf
+* asciidoctor-diagram
+* pandoc
+
+To install all of these run the following commands:
+
+----
+$ brew install asciidoctor
+$ brew install pandoc
+----
+
+For asciidoctor-diagram run the following commands:
+----
+$ gem install asciidoctor-diagram
+$ bundle
+----

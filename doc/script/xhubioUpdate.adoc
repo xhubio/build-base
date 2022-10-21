@@ -1,0 +1,14 @@
+= onUpdate
+
+Updates existing configuration files.
+Also updates the `package.json` file.
+
+----
+npm run onUpdate       <1>
+npm run onUpdate force <2>
+npm run onUpdate clean <3>
+----
+<1> Only and new files or entries in the `package.json` and delete files.
+<2> Also overwrite existing files and entries in the `package.json`.
+<3> Only relevant for `package.json`. It resets the file to the current init state.
+

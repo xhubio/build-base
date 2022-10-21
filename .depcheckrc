@@ -1,0 +1,11 @@
+ignores: [
+  "@mermaid-js/mermaid-cli",
+  "@semantic-release/*",
+  "@types/jest",
+  "@types/node",
+  "typedoc-plugin-markdown",
+  "eslint-plugin-*",
+  "semantic-release",
+  "ts-jest",
+  "typedoc"
+]

@@ -1,0 +1,18 @@
+
+
+[
+  ".depcheckrc",
+  ".eslintrc.json",
+  ".releaserc.json",
+  ".prettierrc.json",
+  "tsconfig.json",
+  "typedoc.json",
+  {
+    "dest": ".github/CODEOWNERS",
+    "src": "_github/CODEOWNERS"
+  },
+  {
+    "dest": ".github/workflows/release.yml",
+    "src": "_github/workflows/release.yml"
+  }
+]

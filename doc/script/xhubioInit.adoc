@@ -1,0 +1,39 @@
+=== onInit
+Creates an initial new project for a lib.
+
+[source,bash]
+----
+mkdir <name of new repo>
+cd <name of new repo>
+git init
+----
+
+.Cloned repo
+----
+git clone @yourOrg/repo-name
+cd repo-name
+----
+
+.Once in the project folder
+----
+npm init --yes                                  <1>
+npm install --save-dev @xhubio/build-base  <2>
+npx xhubio-scripts-lib xhubioInit                       <3>
+----
+<1> Creates an initial `package.json` file.
+<2> Adds the base module `@onrunning/cil-base-lib` as a `devDependency`.
+<3> Executes the init script.
+
+After this the following entries needs to be updated in the 'package.json' file.
+
+[source,json]
+----
+{
+  "name": "your-name-xxx",                                   <1>
+   "repository": {
+    "url": "https://github.com/yourOrg/your-name--xxx.git"   <2>
+  }
+}
+----
+<1> The name must be changed from 'cil-logistic-xxx' to '@yourOrg/your-name--xxx'
+<2> Enter the correct name of the repo

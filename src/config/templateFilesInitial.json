@@ -1,0 +1,33 @@
+[
+  ".depcheckrc",
+  ".eslintrc.json",
+  ".releaserc.json",
+  "jest.config.js",
+  "doc/index.adoc",
+  "README.md",
+  "tsconfig.json",
+  "license",
+  "typedoc.json",
+  ".prettierignore",
+  ".prettierrc.json",
+  {
+    "dest": ".gitignore",
+    "src": "gitignore"
+  },
+  {
+    "dest": "tests/dummy.test.ts",
+    "src": "_tests/dummy.test.ts"
+  },
+  {
+    "dest": "src/index.ts",
+    "src": "_src/index.ts"
+  },
+  {
+    "dest": ".github/CODEOWNERS",
+    "src": "_github/CODEOWNERS"
+  },
+  {
+    "dest": ".github/workflows/release.yml",
+    "src": "_github/workflows/release.yml"
+  }
+]
