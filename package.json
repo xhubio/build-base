@@ -3,7 +3,7 @@
   "version": "0.0.0-semantic-version",
   "repository": {
     "type": "git",
-    "url": "https://github.com/darlenya/build-base"
+    "url": "https://github.com/xhubio/build-base"
   },
   "license": "MIT",
   "bin": {
