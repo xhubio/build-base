@@ -2,15 +2,6 @@
 
 The aim of this module ist to provide an easy way to setup new repositories and to maintain the exiting ones.
 
-== Local Set Up
-To be able to download packages from the organisation level you need to configure a https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token[GitHub Personal Access Token] with at least `ReadPackages` permission.
-
-Later create (or update) a `./npmrc` file in your `$HOME` folder with the following content:
-....
-@onrunning:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=<YOUR_PERSONAL_GIT_HUB_TOKEN>
-....
-
 == Package.json
 To maintain or configure the 'package.json' file the following files needs to be maintained.
 
@@ -49,7 +40,7 @@ To maintain the configuration files the following files need to be maintained
 
 
 * `src/config/templateFilesUpdate.json` +
-  The list of files to be updated or added. The 'onUpdate' will overwrite files only if called with the 'force' option.
+  The list of files to be updated or added. The 'xhubioUpdate' will overwrite files only if called with the 'force' option.
 
 
 * `src/config/templateFilesDelete.json` +

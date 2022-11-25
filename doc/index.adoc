@@ -2,8 +2,6 @@
 
 include::why.adoc[]
 
-IMPORTANT: To make this working you need to set an organisational access token for each repository.
-The name of the secret must be: 'PACKAGE_GITHUB_TOKEN'.
 
 === Script
 Describes the available scripts for initial creation and maintenance.

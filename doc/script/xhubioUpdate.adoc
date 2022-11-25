@@ -1,4 +1,4 @@
-= onUpdate
+=== xhubioUpdate
 
 Updates existing configuration files.
 Also updates the `package.json` file.

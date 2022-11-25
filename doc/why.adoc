@@ -1,10 +1,7 @@
-= Why should I care about this module?
+=== Why should I care about this module?
 
 For none mono-repositories this module reduces the effort to handle a lot of repositories.
 It provides methods to update and maintain already created repositories.
-
-It uses https://github.com/features/actions[GitHub actions] for the continuous integration process.
-Dependabot is used to automatically update dependencies.
 
 Makes it easy to create a new repository from scratch and set it up with all the files
 to have a 'working' module. So it helps to unify all the repos.

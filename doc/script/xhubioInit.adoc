@@ -1,4 +1,4 @@
-=== onInit
+=== xhubioInit
 Creates an initial new project for a lib.
 
 [source,bash]
@@ -21,7 +21,7 @@ npm install --save-dev @xhubio/build-base  <2>
 npx xhubio-scripts-lib xhubioInit                       <3>
 ----
 <1> Creates an initial `package.json` file.
-<2> Adds the base module `@onrunning/cil-base-lib` as a `devDependency`.
+<2> Adds the base module `@xhubio/build-base` as a `devDependency`.
 <3> Executes the init script.
 
 After this the following entries needs to be updated in the 'package.json' file.
@@ -35,5 +35,5 @@ After this the following entries needs to be updated in the 'package.json' file.
   }
 }
 ----
-<1> The name must be changed from 'cil-logistic-xxx' to '@yourOrg/your-name--xxx'
+<1> The package name must be changed to the right one.
 <2> Enter the correct name of the repo
