@@ -6,12 +6,12 @@ import {
 
 test('getInitialTemplateFiles', async () => {
   const data = await getInitialTemplateFiles()
-  await expect(data.length).toBe(18)
+  await expect(data.length).toBe(17)
 })
 
 test('getUpdateTemplateFiles', async () => {
   const data = await getUpdateTemplateFiles()
-  await expect(data.length).toBe(10)
+  await expect(data.length).toBe(9)
 })
 
 test('getDeleteTemplateFiles', async () => {
