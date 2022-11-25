@@ -42,7 +42,7 @@ Promise<void>
 
 #### Defined in
 
-[copyFiles.ts:28](https://github.com/xhubio/build-base/blob/47ef9bd/src/copyFiles.ts#L28)
+[copyFiles.ts:28](https://github.com/xhubio/build-base/blob/7c5ac82/src/copyFiles.ts#L28)
 
 ___
 
@@ -67,7 +67,7 @@ Promise<void>
 
 #### Defined in
 
-[deleteFiles.ts:12](https://github.com/xhubio/build-base/blob/47ef9bd/src/deleteFiles.ts#L12)
+[deleteFiles.ts:12](https://github.com/xhubio/build-base/blob/7c5ac82/src/deleteFiles.ts#L12)
 
 ___
 
@@ -89,7 +89,7 @@ result - The result of the script execution
 
 #### Defined in
 
-[generalScriptExecuter.ts:33](https://github.com/xhubio/build-base/blob/47ef9bd/src/generalScriptExecuter.ts#L33)
+[generalScriptExecuter.ts:33](https://github.com/xhubio/build-base/blob/7c5ac82/src/generalScriptExecuter.ts#L33)
 
 ___
 
@@ -107,7 +107,7 @@ deletes - An object with all the deletions
 
 #### Defined in
 
-[config/packageJson.ts:35](https://github.com/xhubio/build-base/blob/47ef9bd/src/config/packageJson.ts#L35)
+[config/packageJson.ts:35](https://github.com/xhubio/build-base/blob/7c5ac82/src/config/packageJson.ts#L35)
 
 ___
 
@@ -125,7 +125,7 @@ deleteTemplates - The list of the template file definitions to be deleted
 
 #### Defined in
 
-[config/templateFiles.ts:35](https://github.com/xhubio/build-base/blob/47ef9bd/src/config/templateFiles.ts#L35)
+[config/templateFiles.ts:35](https://github.com/xhubio/build-base/blob/7c5ac82/src/config/templateFiles.ts#L35)
 
 ___
 
@@ -143,7 +143,7 @@ template - A json object which is used as a  package.json template.
 
 #### Defined in
 
-[config/packageJson.ts:16](https://github.com/xhubio/build-base/blob/47ef9bd/src/config/packageJson.ts#L16)
+[config/packageJson.ts:16](https://github.com/xhubio/build-base/blob/7c5ac82/src/config/packageJson.ts#L16)
 
 ___
 
@@ -161,7 +161,7 @@ initialTemplates - The list of the initial template file definitions
 
 #### Defined in
 
-[config/templateFiles.ts:17](https://github.com/xhubio/build-base/blob/47ef9bd/src/config/templateFiles.ts#L17)
+[config/templateFiles.ts:17](https://github.com/xhubio/build-base/blob/7c5ac82/src/config/templateFiles.ts#L17)
 
 ___
 
@@ -180,7 +180,7 @@ template - A Json object with all the properties for adding or replace
 
 #### Defined in
 
-[config/packageJson.ts:26](https://github.com/xhubio/build-base/blob/47ef9bd/src/config/packageJson.ts#L26)
+[config/packageJson.ts:26](https://github.com/xhubio/build-base/blob/7c5ac82/src/config/packageJson.ts#L26)
 
 ___
 
@@ -198,7 +198,7 @@ updateTemplates - The list of the template file definitions to be updated
 
 #### Defined in
 
-[config/templateFiles.ts:26](https://github.com/xhubio/build-base/blob/47ef9bd/src/config/templateFiles.ts#L26)
+[config/templateFiles.ts:26](https://github.com/xhubio/build-base/blob/7c5ac82/src/config/templateFiles.ts#L26)
 
 ___
 
@@ -224,7 +224,7 @@ Promise<void>
 
 #### Defined in
 
-[packageMaintenance.ts:33](https://github.com/xhubio/build-base/blob/47ef9bd/src/packageMaintenance.ts#L33)
+[packageMaintenance.ts:33](https://github.com/xhubio/build-base/blob/7c5ac82/src/packageMaintenance.ts#L33)
 
 ___
 
@@ -250,7 +250,7 @@ Promise<void>
 
 #### Defined in
 
-[packageMaintenance.ts:64](https://github.com/xhubio/build-base/blob/47ef9bd/src/packageMaintenance.ts#L64)
+[packageMaintenance.ts:64](https://github.com/xhubio/build-base/blob/7c5ac82/src/packageMaintenance.ts#L64)
 
 ___
 
@@ -270,7 +270,7 @@ Promise<void>
 
 #### Defined in
 
-[script/xhubioInitScript.ts:15](https://github.com/xhubio/build-base/blob/47ef9bd/src/script/xhubioInitScript.ts#L15)
+[script/xhubioInitScript.ts:15](https://github.com/xhubio/build-base/blob/7c5ac82/src/script/xhubioInitScript.ts#L15)
 
 ___
 
@@ -298,4 +298,4 @@ Promise<void>
 
 #### Defined in
 
-[script/xhubioUpdateScript.ts:26](https://github.com/xhubio/build-base/blob/47ef9bd/src/script/xhubioUpdateScript.ts#L26)
+[script/xhubioUpdateScript.ts:26](https://github.com/xhubio/build-base/blob/7c5ac82/src/script/xhubioUpdateScript.ts#L26)

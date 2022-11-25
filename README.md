@@ -115,9 +115,9 @@ After this the following entries needs to be updated in the
 Updates existing configuration files. Also updates the `package.json`
 file.
 
-    npm run onUpdate       
-    npm run onUpdate force 
-    npm run onUpdate clean 
+    npm run xhubioUpdate       
+    npm run xhubioUpdate force 
+    npm run xhubioUpdate clean 
 
 -   Only and new files or entries in the `package.json` and delete
     files.
