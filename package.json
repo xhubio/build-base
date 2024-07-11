@@ -32,7 +32,7 @@
     "doc": "npm run docPdf && npm run docDocbook && npm run doc2md && npm run docApi"
   },
   "dependencies": {
-    "@mermaid-js/mermaid-cli": "9.4.0",
+    "@mermaid-js/mermaid-cli": "10.9.1",
     "@semantic-release/commit-analyzer": "9.0.2",
     "@semantic-release/github": "8.1.0",
     "@semantic-release/npm": "9.0.2",
